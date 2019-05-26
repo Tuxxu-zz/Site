@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'BwModelica-Regular';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/font/BwModelica-Regular.woff2') format('woff2'),
+       url('/assets/font/BwModelica-Regular.woff') format('woff'),
+       url('/assets/font/BwModelica-Regular.ttf') format('truetype'),
+       url('/assets/font/BwModelica-Regular.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'BwModelica-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/assets/font/BwModelica-ExtraBold.woff2') format('woff2'),
+       url('/assets/font/BwModelica-ExtraBold.woff') format('woff'),
+       url('/assets/font/BwModelica-ExtraBold.ttf') format('truetype'),
+       url('/assets/font/BwModelica-ExtraBold.eot') format('embedded-opentype');
+}
+img{
+  max-width: 180px;
+}
+svg, .tuxu{
+  margin: 16px;
+  width: 72px;
+}
+.line{
+  position: absolute;
+  width: 2px;
+  right: 16px;
+}
+.links{
+  font-family: BwModelica-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+  position: absolute;
+  right: 4px;
+  bottom: 32px;
+}
+.links a{
+  transition: 0.5s;
+}
+.links a:hover, .links a:active{
+  font-family: BwModelica-ExtraBold;
+  font-style: normal;
+  line-height: 18px;
+  font-weight: 800;
+  transition: 0.5s;
+}
+.links a:after {
+  content: ' 👈🏾';
+  opacity: 0;
+  transition: 0.5s;
+}
+.links a:hover:after {
+  content: ' 👈🏾';
+  opacity: 1;
+  transition: 0.5s;
+}
+.about{
+  font-family: BwModelica-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  top: 120px;
+  left: 3px;
+  position: absolute;
+}
+.photo{
+  position: absolute;
+  margin: 16px 16px 16px 4px;
+  bottom: 32px;
+}
+.night{
+  background-color: black;
+}
+.night p, .night a{
+  color: white !important;
+}
+.night svg .tuxu, .night svg .line{
+  fill: white !important;
+}
+.day svg .tuxu, .day svg .line{
+  fill: black !important;
+}
+.day{
+  background-color: white;
+}
+.day p, .day a{
+  color: black;
+  fill: black;
+}
+@media only screen and (min-width: 769px){
+  .hero {
+      background-image: url("/assets/img/avatar.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment:fixed;
+  }
+  svg, .tuxu{
+    margin: 60px;
+  }
+  .line{
+    right: 60px;
+    top: -10px;
+    margin-right: 0;
+  }
+  .about{
+    top: 200px;
+    left: 48px;
+  }
+  .links{
+    right: 24px;
+  }
+}
+@media only screen and (min-width: 1024px){
+  .about{
+    position: absolute;
+    top: auto;
+    bottom: 34px;
+  }
+}
