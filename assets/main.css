@@ -16,8 +16,9 @@
     url(/assets/font/BwModelica-ExtraBold.ttf) format('truetype'),
     url(/assets/font/BwModelica-ExtraBold.eot) format('embedded-opentype');
 }
-img {
+.photo {
     max-width: 180px;
+    height: auto;
 }
 .tuxu, svg {
     margin: 16px;
@@ -88,7 +89,25 @@ img {
     color: #000;
     fill: #000;
 }
+.glitch-img {
+    background-image: url(/assets/img/avatar.jpg);
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    left: 12px;
+    background-position:center;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    opacity : 1;
+}
 @media only screen and (min-width:769px) {
+  .glitch-img{
+    width: 25%;
+    height: 25%;
+    left: auto;
+    }
     .hero {
         cursor: url(assets/img/myBall.cur),auto;
     }
@@ -115,8 +134,5 @@ img {
     .about {
         position: absolute;
         bottom: 34px;
-    }
-    .photo{
-        left: 56px;
     }
 }

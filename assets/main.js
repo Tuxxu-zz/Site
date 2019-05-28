@@ -38,8 +38,16 @@ new TypeIt('#about', {
 .type('technologies!')
 .go();
 
-$('body').awesomeCursor('location-arrow', {
-  color: '#0050FF',
-  hotspot: 'top right',
-  size: 48
+$( function() {
+		$( ".glitch-img" ).mgGlitch({
+				  destroy : false,
+          glitch: true,
+          scale: true,
+          blend : true,
+          blendModeType : 'screen',
+          glitch1TimeMin : 200,
+          glitch1TimeMax : 400,
+          glitch2TimeMin : 10,
+          glitch2TimeMax : 100,
+		});
 });
