@@ -37,3 +37,9 @@ new TypeIt('#about', {
 .break()
 .type('technologies!')
 .go();
+
+$('body').awesomeCursor('location-arrow', {
+  color: '#0050FF',
+  hotspot: 'top right',
+  size: 48
+});

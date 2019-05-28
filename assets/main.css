@@ -89,35 +89,34 @@ img {
     fill: #000;
 }
 @media only screen and (min-width:769px) {
+    .hero {
+        cursor: url(assets/img/myBall.cur),auto;
+    }
     .day .hero {
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url(/assets/img/avatar.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+        background-color: white;
     }
     .night .hero {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url(/assets/img/avatar.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+        background-color: black;
     }
     .tuxu, svg {
         margin: 60px;
     }
     .about {
-        top: 200px;
         left: 48px;
     }
     .links {
         right: 24px;
     }
+    .photo{
+        left: 56px;
+    }
 }
 @media only screen and (min-width:1024px) {
     .about {
         position: absolute;
-        top: auto;
         bottom: 34px;
+    }
+    .photo{
+        left: 56px;
     }
 }
