@@ -108,9 +108,6 @@
     height: 25%;
     left: auto;
     }
-    .hero {
-        cursor: url(assets/img/myBall.cur),auto;
-    }
     .day .hero {
         background-color: white;
     }
