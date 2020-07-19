@@ -20,7 +20,7 @@ new TypeIt('#about', {
 .type('currently works')
 .pause(200)
 .break()
-.type('at Ampfy')
+.type('at Meiuca')
 .break()
 .break()
 .pause(500)
